@@ -22,6 +22,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 5px -5px 15px 0px rgba(0, 0, 0, 0.75);
 }
 
 header a {
