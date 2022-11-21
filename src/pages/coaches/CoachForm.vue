@@ -29,11 +29,11 @@
         <label for="frontend">Frontend Development</label>
       </div>
       <div>
-        <input type="checkbox" id="backend" value="frontend" v-model="areas" />
+        <input type="checkbox" id="backend" value="backend" v-model="areas" />
         <label for="backend">Backend Development</label>
       </div>
       <div>
-        <input type="checkbox" id="career" value="frontend" v-model="areas" />
+        <input type="checkbox" id="career" value="career" v-model="areas" />
         <label for="career">Career</label>
       </div>
     </div>
@@ -43,25 +43,26 @@
 
 <script>
 export default {
+  emits: ['save-data'],
   data() {
     return {
       firstName: '',
       lastName: '',
       description: '',
-      areas: '',
+      areas: [],
       rate: null,
     };
   },
   methods: {
     submitForm() {
-      const form = {
+      const formData = {
         first: this.firstName,
         last: this.lastName,
         desc: this.description,
         rate: this.rate,
         areas: this.areas,
       };
-      console.log(form);
+      this.$emit('save-data', formData);
     },
   },
 };
