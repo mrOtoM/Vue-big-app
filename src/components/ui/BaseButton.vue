@@ -48,8 +48,8 @@ a:hover,
 a:active,
 button:hover,
 button:active {
-  background: #a61083;
-  border-color: #a605ca;
+  background: var(--hover-btn-color);
+  border: var(--hover-btn-border-color);
 }
 
 .flat {

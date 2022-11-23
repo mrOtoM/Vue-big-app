@@ -21,6 +21,8 @@ export default {
   --main-color: #f9d5e5;
   --border-color: 1px solid #f9d5e5;
   --white: rgb(255, 255, 255);
+  --hover-btn-color: #ab1159;
+  --hover-btn-border-color: 1px solid #8d0065;
 }
 
 * {
