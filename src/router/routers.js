@@ -34,7 +34,7 @@ const router = createRouter({
       component: CoachRegistration,
     },
     {
-      path: '/request',
+      path: '/requests',
       component: RequestReceived,
     },
     {
